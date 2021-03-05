@@ -1,0 +1,24 @@
+Analog VS Digital
+
+Our Analog Computer has several advantages over a digital equivalent. Digital devices, no matter how good, have to run at a finite sample rate and accuracy; analog computers do not have this limit. In an analog computer the results can be any real number, and are available theoretically immediately (limited by some fraction of the speed of light) while digital devices update only one discreet time per clock cycle and can only represent results to a limited number of bits of precision, perhaps to a precision of outputmax/256 or outputmax/1024. Additionally, for the specific task that our analog computer is designed for, the cost is much lower. The passive components are virtually free, while the opamps are available for about 30 cents. (The LM741 is a bad example of digital vs analog - the practical bandwidth is very limited. Opamps with bandwidth of around 10mhz are available for ~30 cents as well.) Digital components for sampling the inputs and producing the outputs are many times more expensive.
+
+
+
+
+Simulations
+We simulated our analog computer design using ngspice and kiCad. In order to test the sum and difference module we subjected the virtual circuit to the same inputs that we used on the competitor's product. 
+
+Test 1 : a=1, b=0.454v, c= .417v, Competitor product output: -3.72v. 
+[simulation_sum4.png]
+
+Test 2 : a=1, b=.775v, c=.671, Competitor product output: -5.94v. 
+[simulation_sum2.png]
+
+Test 3 : a=1, b=1.004v, c=.848v, Competitor product output: -7.48v. 
+[simulation_sum1.png]
+
+To test the integrator subcircuit we input a square wave on one of the inputs, expecting to get a triangle wave out. This was the case, demonstrating that the circuit functions as expected. It may be noted that the resulting waveform isn't exactly the integral of the input - it is scaled; the input potentiometers are intended to be adjusted in order to calibrate the integrator, once built this circuit would be adjusted to give exactly the expected output.
+
+Circuit Design:
+
+The integrator uses a large value potentiometer on the input to allow the circuit to be calibrated; capacitors are nortoriously loose-tolerance parts, so designing a circuit that is accurate without calibration would be difficult or expensive.s
