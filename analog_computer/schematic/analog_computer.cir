@@ -1,0 +1,26 @@
+.title KiCad schematic
+.include "LM741.MOD"
+U1 NC_01 Net-_R1-Pad1_ Net-_R4-Pad1_ -15V NC_02 Net-_R9-Pad1_ +15V NC_03 LM741
+R1 Net-_R1-Pad1_ NC_04 49.9K
+R2 Net-_R1-Pad1_ NC_05 499K
+R3 Net-_R1-Pad1_ NC_06 499K
+R4 Net-_R4-Pad1_ NC_07 49.9K
+R5 Net-_R4-Pad1_ NC_08 499K
+R6 Net-_R4-Pad1_ NC_09 499K
+R9 Net-_R9-Pad1_ Net-_R1-Pad1_ 499K
+R8 Net-_R1-Pad1_ GND 24.9K
+R7 Net-_R4-Pad1_ GND 23.7K
+RV1 Net-_R9-Pad1_ NC_10 GND 10K
+R15 Net-_C1-Pad2_ GND 10k
+C1 Net-_C1-Pad1_ Net-_C1-Pad2_ 1u
+R12 Net-_R12-Pad1_ GND 91k
+R13 Net-_R13-Pad1_ NC_11 910k
+R14 Net-_R14-Pad1_ GND 910k
+RV2 Net-_RV2-Pad1_ Net-_R12-Pad1_ 9k
+RV3 Net-_RV2-Pad1_ Net-_R13-Pad1_ 90k
+RSW1 Net-_RV2-Pad1_ Net-_C1-Pad2_ 0
+RV4 Net-_RV2-Pad1_ Net-_R14-Pad1_ 90k
+RV5 Net-_C1-Pad1_ NC_12 GND 10k
+XU2 GND Net-_C1-Pad2_ +15V -15V Net-_C1-Pad1_ LM741/NS
+.tran 100us 3s 0 
+.end
