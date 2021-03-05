@@ -1,0 +1,9 @@
+- how did we demonstate f=a(b-10c) + the data
+- How did we demonstrate f=integral(f(t))
+
+
+
+-explanation of how our circuit works
+-simulation results
+-schematic
+-Analog vs digital
