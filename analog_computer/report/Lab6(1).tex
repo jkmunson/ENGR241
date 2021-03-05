@@ -1,0 +1,58 @@
+\documentclass[11pt]{article}
+\usepackage[letterpaper]{geometry}
+\usepackage{times}
+\usepackage{verbatim}
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage{fullwidth}
+\title{ENGR-241 Lab }
+\author{}
+\geometry{top=1.0in, bottom=1.0in, left=1.0in, right=1.0in}
+\begin{document}
+		\subsection*{Data Tables}
+All of the calculations and readings for the circuits are tabulated here.\\
+\subsubsection*{Circuit}
+\begin{table}[h]
+	\def\arraystretch{1.2}%
+	\begin{tabular}{|l|l|l|l|l|l|l|}
+		\hline
+		Summing(a(b-10c))	& a(input) 		& b(input)	& c(input)	& Output (calculated)		& Output (Observed) 	& \% Diff			\\ \hline
+		test 1		& 1.0V			& 0.454V	& 0.417V	& -3.72V					& -3.73V				&0.0722\%				\\ \hline
+		test 2		& 1.0V			& 0.775V	& 0.671V	& -5.94V					& -5.96V				&0.3367\%				\\ \hline
+		test 3		& 1.0V			& 1.004V	& 0.848V	& -7.48V					& -7.53V				&0.6684\%				\\ \hline
+	
+		
+	\end{tabular}
+\end{table}
+
+\begin{table}[h]
+	\def\arraystretch{1.2}%
+	\begin{tabular}{|l|l|l|l|l|l|l|}
+		\hline
+		Integration(inverting)	& Input 		& Output(calculated)	& Output (Observed)	 		& \% Diff			\\ \hline
+		test 1					& 0.497V		& -0.497V				& -0.4V						&19.52\%			\\ \hline
+		test 2					& 1.009V		& -1.009V				& -0.87V					&13.78\%			\\ \hline
+		test 3					& 2.01V			& -2.001V				& -1.8V						&10.045\%			\\ \hline
+		
+		
+	\end{tabular}
+\end{table}
+\subsection*{Competitor's Product Analysis}
+	
+	The Educational Computer runs off of a standard 60Hz power source and converts this for the circuits op amps VCC values of +/- 15V. It has a variable input for each of its integrating and summing boards. This model has three summing and difference Op Amps and two integrating Op Amps. \\
+	
+	Each of the integrating Op Amps take in a input voltage and performs and inverting integration of the input. There are three separate input plugs, two are will input the chosen value, and the third will amplify the input by a factor of ten. The initial conditions are set with the red button(labeled SET) which holds the voltage constant while adjusting the initial condition knob. For the tests we performed on this model sent the output values to a fluke, verifying the circuit functioned properly. There are two different modes of integration on the AMF Educational Computer, the computer has a switch that can select either continuous integration (labeled CONT) or an integration over 1 second(labeled 1.0 SEC.). We performed tests in both modes and had moderately accurate results considering the age of the equipment. For the tests we performed on this model, we connected the output to a fluke, verifying the circuit functioned properly. The data can be found in the "Integration" data tables above. \\
+	
+	All three of the summing and difference amplifiers take an input voltage and add or subtract there values depending on where the inputs are connected to the circuit. There are a total of 6 input plugs, three adding and three subtracting. Like the integrating input, there are two  that directly input in the chosen input voltage and one that scales the input by ten. This is true for both the adding and subtracting inputs. The circuit also has a potentiometer that scales the output between zero and one and it is adjusted by a knob on the computer. We performed multiple tests and had highly accurate results. For the tests we performed on this model, we connected the output to a fluke, verifying the circuit functioned properly. The data can be found in the "Summing" data tables above.
+
+\subsection*{Circuit Analysis}
+	The circuit we have designed is similar in funtionality to the Analog Computer described above. Our design incorporates a single summing and difference Op Amp and a single integrating Op Amp. Each of the circuits have 741 Op Amps that are supplied with a +/- 15V VCC and the both have three input and output jacks.  The input jacks are connected to ground when not in use to prevent current from flowing through them while not in use. There are two "1x" inputs and one "10x" input for each circuit, similar to the AMF computer.
+	
+	The integrating circuit, shown above uses a feedback capacitor to perform the integration by charging and discharging as the input of the circuit changes. Resistor and Capacitance values were chosen to provide an output that is one times the integral and it is inverting because the feedback is negative. The resistor placed in parallel is installed to slow the time at which the Op Amp will reach saturation. Large resistor values were chosen for the circuit to minimize the effect of noise on the system in our design.
+	
+	The addition and subtraction Op Amp takes the input voltages and uses the inverting and non-inverting terminals of the Op Amp to perform addition and subtraction. Once again, large resistor values were used to minimize the influence of parasitic capacitance and inductance on the circuit. 
+\subsection*{Design Advantages}	
+	The analog computer we have designed has several advantages over the AMF Computer. The main advantage being that we cut costs by minimizing the amount of materials we need to produce our computer by only including the two Op Amps. Additionally, we produced easy to read schematics with properly labeled pins on the Op Amp unlike our competitor's product.
+	 
+	
+\end{document}
