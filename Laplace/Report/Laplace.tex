@@ -1,0 +1,32 @@
+\documentclass[11pt]{article}
+\usepackage[letterpaper]{geometry}
+\usepackage{times}
+\usepackage{verbatim}
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage{fullwidth}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{hyperref}
+\graphicspath{{Images/}}
+\title{ENGR-241 Laplace Lab}
+\author{Jeremy Munson, Lauren Speirs \& Andrew Henrikson}
+\geometry{top=.8in, bottom=.8in, left=.8in, right=.8in}
+
+\setlength{\parindent}{0em}
+\setlength{\parskip}{.5em}
+\begin{document}
+	\maketitle
+	\subsection*{Overview}
+	For this lab we constructed an RLC circuit with a square wave input from the signal generator and viewed the voltage output on the oscilloscope. We calculated the equation  for the output voltage using an Laplace transform and compared the results to the outputs found in our constructed circuit. We then simulated the circuit using Orcad to verify our results. We then graphed and compared all three output voltages.
+	\subsection*{Calculations}
+	The calculations for the circuit were performed by transforming the system into the S domain and then performing partial fraction decomposition to determine the values of $K_{1}$ and $K*_{1}$ and using all of the found values in the general equation for the transformation back to the time domain.
+	\subsubsection*{1. Calculate the output voltage of the given circuit in the S domain.}
+	\par{Given:}\\
+	$R=1k\Omega$\\
+	$C=2000 pF$\\
+	$L=220\mu H$\\
+	$V_{o}(s)= \frac{V_{i}/RC}{s^{2}+(1/RC)s+1/LC}$\\
+	
+	
+\end{document}
