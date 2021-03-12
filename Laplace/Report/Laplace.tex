@@ -18,7 +18,7 @@
 \begin{document}
 	\maketitle
 	\subsection*{Overview}
-	For this lab we constructed an RLC circuit with a square wave input from the signal generator and viewed the voltage output on the oscilloscope. We calculated the equation  for the output voltage using an Laplace transform and compared the results to the outputs found in our constructed circuit. We then simulated the circuit using Orcad to verify our results. We then graphed and compared all three output voltages.
+	For this lab we constructed an RLC circuit with a square wave input from the signal generator and viewed the voltage output on the oscilloscope. We calculated the equation for the output voltage using  Laplace transforms and compared the results to the outputs found in our constructed circuit. We also simulated the circuit using Orcad to verify our results. We then graphed and compared all three output voltages.
 	\subsection*{Circuit Diagrams}
 	
 	\begin{figure}[H]
@@ -53,10 +53,23 @@
 	\centering
 	\includegraphics[width=3in]{images/Function_Graph.png}
 	\end{figure}
+	
+	\subsection*{Procedure}
+		The circuit was simple to construct using the breadboard. Aside from constructing the circuit as normal, we used the LCR meter to select a capacitor and an inductor that were as close to the exact values specified as possible. In order to get the desired value of L we used two inductors in series. There was a brief hiccup in building the circuit, as the capacitor was accidentally connected to the wrong pin on the breadboard. After constructing the circuit, measurements were taken in the usual manner using the oscilloscope.
 	\subsection*{Error Analysis}
-	The error analysis will show that our experimental values and our simulated values match closely with our calculated values. The measured values for the parts used were fine-tuned with the [    ] tool to get measured values were: 1000 ohm resistor (0\% error), 2010 pF capacitor (0.5\%) and a 219 uH inductor (0.5\%). Our frequency from the signal generator was at about 10 kHz. 
+	The error analysis will show that our experimental values and our simulated values match closely with our calculated values. The values for the parts used were fine-tuned with the LCR meter to get a precise result. The 2000pf capacitor was measured at 2010 pF(0.5\%) and the 220$\mu H$ inductor was measured at 219 $\mu H$  (0.5\%). Our frequency from the signal generator was at about 10 kHz+/-5% , but the result was not particularly dependent on the frequency.
 	The amplitude of our Voltage waveform from our physical components on the oscilliscope shows 1.249 V on the first peak, whereas the graph used from the calulated values shows 1.218 V for the first peak (2.55\% error). 
-	Our sources of error were due mostly to the non-ideal components themselves, even after we had fine-tuned them as close as possible to the values specified. Another source of error would be due to the signal generator outputting a non-ideal square wave. The generator had distortion in the square wave output, rounding off the corners slightly and not having a perfectly vertical line.  
+	Our sources of error were due mostly to the non-ideal nature of physical components and due to the signal generator outputting a non-ideal square wave. The signal generator has distortion in the square wave output, rounding off the square wave corners and having a limited slew rate. 
+\begin{table}[h]
+		\def\arraystretch{1.2}%
+		\begin{tabular}{|l|l|l|l|l|l|l|}
+			\hline
+			Integration(inverting)	& Input 		& Output(calculated)	& Output (Observed)					& \% Diff			\\ \hline
+			Test 1					& 0.497V		& -0.497V				& -0.4V						&19.52\%			\\ \hline
+			Test 2					& 1.009V		& -1.009V				& -0.87V					&13.78\%			\\ \hline
+			Test 3					& 2.01V			& -2.001V				& -1.8V						&10.045\%			\\ \hline
+		\end{tabular}
+	\end{table}	
 	\subsection*{Conclusion}
-	The lab was performed without issue. We were able to successfully calculate, simulate and build the circuit. Our results from each were very similar in each case with very little error.  
+	The lab was performed without issue. We were able to successfully calculate, simulate and build the circuit. Our results were excellent with minimal error.   
 \end{document}
