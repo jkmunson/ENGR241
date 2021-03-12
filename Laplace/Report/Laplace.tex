@@ -28,11 +28,13 @@
 	
 	\subsection*{Calculations}
 	The calculations for the circuit were performed by transforming the system into the S domain and then performing partial fraction decomposition to determine the values of $K_{1}$ and $K^{*}_{1}$ and using all of the found values in the general equation for the transformation back to the time domain.
+	\vspace{-15px}
 	\subsubsection*{1. Calculate the output voltage of the given circuit in the S domain.}
 	\par{Given:}\\
 	$R=1k\Omega$\\
 	$C=2000 pF$\\
-	$L=220\mu H$
+	$L=220\mu H$\\
+	$v_{source}=5v_{pp}$
 	\par{Solution:}\\
 	$V_{o}(s)= \frac{V_{i}/RC}{s^{2}+(1/RC)s+1/LC}$\\
 	$V_{o}(s)= \frac{5/1000\times2000\times 10^{-12}}{s^{2}+(1/1000\times2000\times 10^{-12})s+(1/220\times10^{-6}\times2000\times 10^{-12})}$\\
@@ -49,6 +51,7 @@
 	\subsubsection*{3. Determine the final expression for the output function in the time domain.}
 	$V_{o}(t)=2|K|e^{-at}cos(\omega t+\theta)u(t)$\\
 	$V_{o}(t)=1.531476e^{-250000t}sin(1.63239\times 10^{6}t)$\\
+	\vspace{-15px}
 	\begin{figure}[H]
 		\centering
 		\includegraphics[width=4in]{images/Function_Graph.png}
