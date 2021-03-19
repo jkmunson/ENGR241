@@ -7,6 +7,7 @@
 \usepackage{fullwidth}
 \usepackage{amsmath}
 \usepackage{amssymb}
+\usepackage{fourier}
 \usepackage{hyperref}
 \graphicspath{{Images/}}
 \title{ENGR-241 Transfer Function Lab}
@@ -20,7 +21,7 @@
 	\subsection*{Overview}
 	For this lab we calculated the transfer function then built the required circuit from the lab guidelines. We then calculated the voltage across the capacitor and compared our results from our circuits output to the oscilloscope. We then built the circuit using Orcad and analyzed the ciruit using the Laplace function in Pspice and compared its output to our previous results.
 		\subsection*{Circuit Diagrams}
-			\begin{figure}[H]
+		\begin{figure}[H]
 			\centering
 			\includegraphics[width=5in]{images/diagram.png}
 		\end{figure}
@@ -28,22 +29,56 @@
 		Our suggested values and measured values for our components used are shown in the table below. The percent error is also listed.
 		\begin{table}[H]
 		\def\arraystretch{1.2}%
+		\centering
 		\begin{tabular}{|l|l|l|l|}
+			
 			\hline
 			Components       	& Suggested 		& Measured      	&\% Diff	\\ \hline
-			Resistor 1   		& $1 k\Omega$		& $0.998 k\Omega$   & 2\%	     \\ \hline	
+			Resistor 1   		& $1 k\Omega$		& $0.998 k\Omega$   & -.2\%	     \\ \hline	
 			Resistor 2			& $240 \Omega$		& $241 \Omega$      & 0.4\%       \\ \hline
-			Inductor			& $220\mu H$		& $199\mu H$		& 10.6\%		\\ \hline
-			Capacitor			& $1 \mu F$			& $0.95 \mu F$		&5.3\%		\\ \hline
+			Inductor			& $220\mu H$		& $199\mu H$		& -10.6\%		\\ \hline
+			Capacitor			& $1 \mu F$			& $0.95 \mu F$		& -5.3\%		\\ \hline
 		\end{tabular}
 	\end{table}
-	
 
 	
 	\subsection*{Calculations}
+	As a note, throughout these calculations the numbers are exact, not approximations. 
+	\subsubsection*{Finding $H(s)$}
+	The circuit may be solved for $V(s)$ by using a simple voltage divider in the s domain.\\ 
+	Find the equivalent impedance $Z_1= (240 \Omega + s \cdot L) \parallel \frac{1}{s\cdot c} = (s\cdot c+(240 \Omega + s \cdot L)^{-1})^{-1}$ \\
+	Which makes $Z_{total}=Z_1+1k\Omega$ and the voltage divider equation yields $V_a=V_s\cdot \frac{Z_1}{Z_{total}}$\\
+	Solving for $H(s)=\frac{V_a}{V_s}=\frac{Z_1}{Z_{total}}$ gives us\\
+	$ H(s)= \left[\frac{1,000,000(11s+12,000,000)}{11s^2+12,000,000s+50,000,000,000}\right] \div \left[ \frac{1,000,000(11s+12,000,000)}{11s^2+12,000,000s+50,000,000,000}+1000\right]$\\
+	Which simplifies to:
+	\[ H(s)= \frac{1000(11s+12,000,000)}{11s^2+12,011,000s+62,000,000,000} \]
+	\subsubsection*{Finding $V_a(s)$}
+	We may simply multiply the transfer function by $V_s$\footnote{The input function, 5u(t) transforms to 5/s} to find $V_a$\\
+	\[ H(s) \cdot \frac{5}{s}= \frac{5000(11s+12,000,000)}{11s^3+12,011,000s^2+62,000,000,000s} \]
+	\newpage
+	\subsubsection*{Finding $v_a(t)$}
+	In order to find the time-domain expression for $v_a$ we must do an inverse laplace transform of $V_a(s)$. The function $V_a(s)$ is not transformable in it's current form, so we will expand it with partial fractions.
+	\begin{itemize}
+		\item The fraction is proper
+		\item The denominator factors to $\frac{1}{11}\cdot s(11s-500\cdot (\sqrt{144261393}-12011))\cdot (11s+500(\sqrt{144261393}+12011))$
+		\item Since there are 3 distinct real roots, we will have 3 constants to find. $K_1,K_2,K_3$
+		\item Pull the $\frac{1}{11}$ up to the numerator, to simplify the expansion to follow.
+		\item \[ \frac{55000(11s+12,000,000)}{s(11s-500\cdot (\sqrt{144261393}-12011))\cdot (11s+500(\sqrt{144261393}+12011))} =\] \\ \[ \frac{K_1}{s} + \frac{K_2}{(11s-500\cdot (\sqrt{144261393}-12011))} \frac{K_3}{(11s+500(\sqrt{144261393}+12011)}\]
+		\item Multiplying by $s$, then evaluating at $s=0$ yields \[K_1=\frac{(55000)(12,000,000)}{-500\cdot (\sqrt{144261393}-12011)\cdot 500(\sqrt{144261393}+12011)} = \frac{30,000}{31}\]
+		
+		
+		
+		\item The $K_1$ term, $\frac{30,000}{31}\cdot s$, inverse transforms to $\frac{30,000}{31}u(t)$
+	\end{itemize}
+	
+	\begin{figure}[H]
+		\centering
+		Plot of $v_a(t)$\\
+		\includegraphics[width=6.55in]{images/function_graph.png}
+	\end{figure}
 	
 	\subsection*{Procedure}
-	The circuit was simple to construct using the breadboard. Aside from constructing the circuit as normal, we used the LCR meter to select a capacitor and an inductor that were as close to the exact values specified as possible. In order to get the desired value of L, we used two inductors in series. After constructing the circuit, measurements were taken in the usual manner using the oscilloscope. The circuits output is shown below.
+	The circuit was simple to construct using the breadboard. Aside from constructing the circuit as normal, we used the LCR meter to select a capacitor and an inductor that were as close to the exact values specified as possible. After constructing the circuit, measurements were taken in the usual manner using the oscilloscope. The circuits output is shown below.
 		\begin{figure}[H]
 		\centering
 		\includegraphics[width=5in]{images/oscilloscope_transfer.jpg}
