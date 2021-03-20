@@ -63,13 +63,21 @@
 		\item The denominator factors to $\frac{1}{11}\cdot s(11s-500\cdot (\sqrt{141,536,121}-12011))\cdot (11s+500(\sqrt{141,536,121}+12011))$
 		\item Since there are 3 distinct real roots, we will have 3 constants to find. $K_1,K_2,K_3$
 		\item Pull the $\frac{1}{11}$ up to the numerator, to simplify the expansion to follow.
-		\item \[ \frac{55000(11s+12,000,000)}{s(11s-500\cdot (\sqrt{141,536,121}-12011))\cdot (11s+500(\sqrt{141,536,121}+12011))} =\] \\ \[ \frac{K_1}{s} + \frac{K_2}{(11s-500\cdot (\sqrt{141,536,121}-12,011))} \frac{K_3}{(11s+500(\sqrt{141,536,121}+12,011)}\]
+		\item \[ \frac{55000(11s+12,000,000)}{s(11s-500\cdot (\sqrt{141,536,121}-12011))\cdot (11s+500(\sqrt{141,536,121}+12011))} =\] \\ \[ \frac{K_1}{s} + \frac{K_2}{(11s-500\cdot (\sqrt{141,536,121}-12,011))} \frac{K_3}{(11s+500(\sqrt{141,536,121}+12,011))}\]
+		
 		\item Multiplying by $s$, then evaluating at $s=0$ yields \[K_1=\frac{(55,000)(12,000,000)}{-500\cdot (\sqrt{141,536,121}-12,011)\cdot 500(\sqrt{141,536,121}+12,011)} = \frac{30}{31}\]
-		\item Multiplying by $(11s-500\cdot (\sqrt{141536121}-12011))s$, then evaluating at $s=\frac{500}{11}\cdot (\sqrt{141536121}-12011) $ yields \[K_2 = \frac{605(11989+\sqrt{141536121})}{(\sqrt{141536121}-12011)^{2}} = \frac{67705}{61} \]
-		\item Multiplying by $(11s+500\cdot (\sqrt{141536121}-12011))$, then evaluating at $s= $ yields \[K_3 = \frac{861496477+72407 \sqrt{141536121}}{1537600} = \frac{25772}{23}\]
 		
+		\item Multiplying by $(11s-500\cdot (\sqrt{141536121}-12011))s$, then evaluating at $s=\frac{500}{11}\cdot (\sqrt{141536121}-12011) $ yields \[K_2 = \frac{-23353459965-1963060 \sqrt{141536121}}{4387619751} = -11\cdot\frac{30}{31} \]
 		
-		\item The $K_1$ term, $\frac{30,000}{31}\cdot s$, inverse transforms to $\frac{30,000}{31}u(t)$
+		\item Multiplying by $(11s+500\cdot (\sqrt{141536121}+12011))$, then evaluating at $s=-\frac{500}{11}\cdot (\sqrt{141536121}+12011)$ yields \[K_3 = \frac{1963060 \sqrt{141536121}-23353459965}{4387619751} = \frac{3}{15313}\]
+		
+		\item The $K_1$ term inverse transforms to $\frac{30}{31}u(t)$
+		\item The $K_2$ term inverse transforms to $-\frac{30}{31}\cdot e^{-\frac{500}{11}\cdot (12011-\sqrt{141536121})\cdot t}$
+		\item The $K_3$ term inverse transforms to $\frac{3}{15313}\cdot e^{-\frac{500}{11}\cdot (12011+\sqrt{141536121})\cdot t}$
+		
+		\item The $K_3$ term is so small that it may reasonably be omitted here. \footnote{The error is $~196\mu v$ at $t=0$, and $~2\mu v$ by $4\mu s$}
+		\item Evaluating the $K_2$ term numerically results in $-\frac{30}{31}e^{-5186.57\cdot t}$
+		\item Finally, \[ v(t) = \frac{30}{31}\cdot(1-e^{-5186.57\cdot t}) \]
 	\end{itemize}
 	
 	\begin{figure}[H]
