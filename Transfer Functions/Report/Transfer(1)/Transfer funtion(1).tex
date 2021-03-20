@@ -51,11 +51,11 @@
 	Solving for $H(s)=\frac{V_a}{V_s}=\frac{Z_1}{Z_{total}}$ gives us\\
 
 
-	\[ H(s)= \frac{(220\times10^{-6s}+240)}{0.22s^{2}+240,000,000+1240} \]
+	\[ H(s)= \frac{(220\times10^{-6}s+240)}{0.22s^{2}+240,000,000+1240} \]
 	\subsubsection*{Finding $V_a(s)$}
 	We may simply multiply the transfer function by $V_s$\footnote{The input function, 5u(t) transforms to 5/s} to find $V_a$\\
-	\[ V(a) \cdot \frac{s}{5}= \frac{(220\times10^{-6s}+240)}{0.22s^{2}+240,000,000+1240} \]
-	\[ V(a) =\frac{5}{s}\cdot\frac{(220\times10^{-6s}+240)}{0.22s^{2}+240,000,000+1240} \]
+	\[ V(a) \cdot \frac{s}{5}= \frac{(220\times10^{-6}s+240)}{0.22s^{2}+240,000,000+1240} \]
+	\[ V(a) =\frac{5}{s}\cdot\frac{(220\times10^{-6}s+240)}{0.22s^{2}+240,000,000+1240} \]
 	\newpage
 	\subsubsection*{Finding $v_a(t)$}
 	In order to find the time-domain expression for $v_a$ we must do an inverse laplace transform of $V_a(s)$. The function $V_a(s)$ is not transformable in it's current form, so we will expand it with partial fractions.\\

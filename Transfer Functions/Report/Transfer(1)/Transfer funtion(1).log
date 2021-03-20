@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 20.6.29) (preloaded format=pdflatex 2020.10.5)  19 MAR 2021 10:56
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 20.6.29) (preloaded format=pdflatex 2020.10.5)  19 MAR 2021 21:35
 entering extended mode
 **"./Transfer funtion(1).tex"
 ("Transfer funtion(1).tex"
@@ -722,7 +722,7 @@ Package rerunfilecheck Info: File `"Transfer funtion(1)".out' has not changed.
  ) 
 Here is how much of TeX's memory you used:
  8022 strings out of 480790
- 119007 string characters out of 2897301
+ 119079 string characters out of 2897301
  385140 words of memory out of 3000000
  23815 multiletter control sequences out of 15000+200000
  606354 words of font info for 117 fonts, out of 3000000 for 9000
@@ -736,7 +736,7 @@ ic/fourier/fourier-ms.pfb><C:/Users/akhen/AppData/Local/Programs/MiKTeX/fonts/t
 ype1/adobe/utopia/putb8a.pfb><C:/Users/akhen/AppData/Local/Programs/MiKTeX/font
 s/type1/adobe/utopia/putr8a.pfb><C:/Users/akhen/AppData/Local/Programs/MiKTeX/f
 onts/type1/adobe/utopia/putri8a.pfb>
-Output written on "Transfer funtion(1).pdf" (6 pages, 1329895 bytes).
+Output written on "Transfer funtion(1).pdf" (6 pages, 1329896 bytes).
 PDF statistics:
  78 PDF objects out of 1000 (max. 8388607)
  17 named destinations out of 1000 (max. 500000)
