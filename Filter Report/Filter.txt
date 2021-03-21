@@ -1,0 +1,55 @@
+\documentclass[11pt]{article}
+\usepackage[letterpaper]{geometry}
+\usepackage{times}
+\usepackage{verbatim}
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage{fullwidth}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{fourier}
+\usepackage{hyperref}
+\graphicspath{{Images/}}
+\title{ENGR-241 RC Passive Filter Lab}
+\author{Jeremy Munson, Lauren Speirs \& Andrew Henrikson}
+\geometry{top=.8in, bottom=.8in, left=.8in, right=.8in}
+
+\setlength{\parindent}{0em}
+\setlength{\parskip}{.5em}
+\begin{document}
+	\maketitle
+	\subsection*{Overview}
+	For this lab we created passive RC low pass and high pass filters that would have a cutoff frequency of 10kHz. We chose the proper value for the resistor and capacitor, observed the waveforms on the oscilloscope and simulated the sinusoidal response in OrCad. We then qualitatively analyzed how the response changed for the sinusoidal, triangle and square waveforms as they were swept through lower and higher frequencies.  
+		\subsection*{Circuit Diagrams}
+		Low Pass Filter: 
+		\begin{figure}[H]
+			\centering
+			\includegraphics[width=5in]{images/low diagram.PNG}
+		\end{figure}
+		High Pass Filter:
+		\begin{figure}[H]
+		    \centering
+		    \includegraphics[width=5in]{images/high diagram.PNG}
+		\end{figure}
+		
+		
+		Our suggested values and measured values for our components used are shown in the table below. The percent error is also listed.
+		\begin{table}[H]
+		\def\arraystretch{1.2}%
+		\centering
+		\begin{tabular}{|l|l|l|l|}
+			
+			\hline
+			Components       	& Suggested 		& Measured      	&\% Diff	\\ \hline
+			Resistor  	    	& $1 k\Omega$		& $1.05 k\Omega$   & 5\%	     \\ \hline	
+			Capacitor			& $16 n F$			& $15.15 nF$		& -5.3\%		\\ \hline
+		\end{tabular}
+	\end{table}
+
+	
+	\subsection*{Calculations}
+	As a note, throughout these calculations the numbers are exact, not approximations. 
+	\subsubsection*{Finding $C$ and $R$}
+	The circuit could have many different combinations to produce the expected output of $$\frac{\sqrt2}{2}$$ at -45 degrees. As shown above, we chose $R= 1000 \Omega$ and using $w_c$ = \frac{1}{RC}$ yields $C=16nF$.
+
+\end{document}
