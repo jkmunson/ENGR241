@@ -23,4 +23,43 @@
 	\subsection*{Circuit Diagrams}
 	  
 	\subsection*{Calculations}
-	The calculations for this circuit 
+	The calculations for this circuit were performed by finding the transfer function for three different frequencies between 1KHz and 100KHz and the calculated value along with the given input function to determine the expected output voltage of our high and low pass filters.
+	\subsubsection*{1. Calculate the transfer of the given LPF circuit.}
+	
+	$H(j\omega)=\frac{\frac{1}{RC}}{j\omega+\frac{1}{RC}}$\\\\
+	$\omega_{1}=1KHz\cdot 2\pi=2,000\pi rad/s$\\
+	$\omega_{2}=10KHz\cdot 2\pi=20,000\pi rad/s$\\
+	$\omega_{3}=100KHz\cdot 2\pi=200,000\pi rad/s$\\\\
+	$H(j\omega_{1})=\frac{\frac{1}{1050\cdot 15.1 \cdot 10^{-9}}}{j\cdot 2000\pi+\frac{1}{1050\cdot 15.1 \cdot 10^{-9}}}$\\
+	$H(j\omega_{1})=0.995075 \angle-5.6890^{\circ} $\\\\
+	$H(j\omega_{2})=\frac{\frac{1}{1050\cdot 15.1 \cdot 10^{-9}}}{j\cdot 20,000\pi+\frac{1}{1050\cdot 15.1 \cdot 10^{-9}}}$\\
+	$H(j\omega_{2})=0.708452 \angle-44.8909^{\circ} $\\	\\
+	$H(j\omega_{3})=\frac{\frac{1}{1050\cdot 15.1 \cdot 10^{-9}}}{j\cdot 200,000\pi+\frac{1}{1050\cdot 15.1 \cdot 10^{-9}}}$\\
+	$H(j\omega_{3})=0.09988 \angle-84.2678^{\circ} $\\\\
+	
+	\subsubsection*{2. Use these values to construct the time domain function for each frequency.}
+	
+	$V_{o(1)}=0.995075cos(2000\pi t-5.68903)V$\\
+	$V_{o(2)}=0.70845cos(20,000\pi t-44.8909)V$\\
+	$V_{o(3)}=0.09988cos(200,000\pi t-84.2678)V$\\
+	
+	\subsubsection*{3. Calculate the transfer of the given HPF circuit.}
+	
+	$H(j\omega)=\frac{j\omega}{j\omega+\frac{1}{RC}}$\\\\
+	$\omega_{1}=1KHz\cdot 2\pi=2,000\pi rad/s$\\
+	$\omega_{2}=10KHz\cdot 2\pi=20,000\pi rad/s$\\
+	$\omega_{3}=100KHz\cdot 2\pi=200,000\pi rad/s$\\\\
+	$H(j\omega_{1})=\frac{j\cdot 2000\pi}{j\cdot 2000\pi+\frac{1}{1050\cdot 15.1 \cdot 10^{-9}}}$\\
+	$H(j\omega_{1})=0.099129 \angle84.311^{\circ} $\\\\
+	$H(j\omega_{2})=\frac{j\cdot 20,000\pi}{j\cdot 20,000\pi+\frac{1}{1050\cdot 15.1 \cdot 10^{-9}}}$\\
+	$H(j\omega_{2})=0.705759 \angle45.1091^{\circ} $\\\\	
+	$H(j\omega_{3})=\frac{j\cdot 200,000\pi}{j\cdot 200,000\pi+\frac{1}{1050\cdot 15.1 \cdot 10^{-9}}}$\\
+	$H(j\omega_{3})=0.995 \angle5.73224^{\circ} $\\\\
+	
+	\subsubsection*{4. Use these values to construct the time domain function for each frequency.}
+	
+	$V_{o(1)}=0.099129cos(2000\pi t+84.311)V$\\
+	$V_{o(2)}=0.705759cos(20,000\pi t+45.1091)V$\\
+	$V_{o(3)}=0.995cos(200,000\pi t+5.73224)V$\\
+	
+	\end{document}
