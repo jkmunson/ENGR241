@@ -71,37 +71,46 @@
 	$V_{o(1)}=0.099129cos(2000\pi t+84.311)V$\\
 	$V_{o(2)}=0.705759cos(20,000\pi t+45.1091)V$\\
 	$V_{o(3)}=0.995cos(200,000\pi t+5.73224)V$\\
-		\subsection*{Procedure}
-	The circuits were simple to construct using the breadboard. Aside from constructing the circuit as normal, we used the LCR meter to select a capacitor to minimize to give us more accurate results between the ideal and observed circuits. After constructing the circuits, measurements were taken in the usual manner using the oscilloscope. We then swept the frequency through a large range with various waveforms to see the differentiating effect of the high pass filter. These outputs are shown below.
+	\subsection*{Procedure}
+	The circuits were simple to construct using the breadboard. Aside from constructing the circuit as normal, we used the LCR meter to select a capacitor to minimize variance and to give us more accurate results between the ideal and observed circuits. After constructing the circuits, measurements were taken in the usual manner using the oscilloscope. We then swept the frequency through a large range with various waveforms to see the differentiating effect of the high pass filter. A sample of these outputs are shown below.
 	
-	
-	Square Wave - high frequency
+
 	\begin{figure}[H]
 		\centering
-		\includegraphics[width=3.5in]{images/sq_wave HF.JPG}
-		High Frequency
+		Square Wave - high frequency - Entire waveform passed with little distortion
+		\includegraphics[width=5.5in]{images/sq_wave HF.JPG}
+		
 	\end{figure}
-	Square Wave - low frequency
-	
-	\begin{figure}[H]
-		\centering
-		\includegraphics[width=3.5in]{images/sq_wave LF.JPG}
-		Low Frequency
-	\end{figure}
-	\newpage
-	Triangle Wave - high frequency
-	\begin{figure}[H]
-		\centering
-		\includegraphics[width=4in]{images/tri_wave HF.JPG}
-		High Frequency
-	\end{figure}
-	Triangle Wave - low frequency
 	
 	\begin{figure}[H]
 		\centering
-		\includegraphics[width=4in]{images/tri_wave LF.JPG}
-		Low Frequency
+		Square Wave - low frequency - "High frequency" square wave edge passed, "dc" of square wave blocked.
+		\includegraphics[width=5.5in]{images/sq_wave LF.JPG}
 	\end{figure}
+	
+	\begin{figure}[H]
+		\centering
+		Triangle Wave - high frequency - Entire waveform passed with little distortion
+		\includegraphics[width=5.5in]{images/tri_wave HF.JPG}
+	\end{figure}
+
+	\subsection*{Data Table}
+	For the low pass and high pass filters we measured three frequencies each, and recorded the output amplitude.
+	
+	\begin{table}[H]
+		\def\arraystretch{1.2}%
+		\centering
+		\begin{tabular}{|l|l|l|l|l|}
+			\hline
+			Filter		       	& Low Frequency(1khz)		& Cutoff Frequency(10khz)  	& 	High Frequency(100khz)	&\% Diff	\\ \hline
+			HPF Measured  		& $200mV\Omega$				& $1.422v$   				& 2v\%	     				&100\%, +.6\%, 0\%			\\ \hline	
+			HPF Expected		& $100mV \Omega$			& $1.414v $      			& 2v\%       				&-			\\ \hline
+			LPF Measured		& $2.00v$					& $1.422v$					& 250mV						&0\%, +.6\%, 150\%			\\ \hline
+			LPF Expected		& $2.00v$					& $1.414v$					& 100mV						&-			\\ \hline
+		\end{tabular}
+	\end{table}
+
+It is worth noting that "High error" at low voltage amplitudes was likely caused by EMI in the lab - at very low voltages the oscilloscope probes are better antennas than probes.
 	
 	\subsection*{Error Analysis}
 	Our suggested values and measured values for our components used are shown in the table below. The percent error is also listed.
@@ -109,14 +118,16 @@
 		\def\arraystretch{1.2}%
 		\centering
 		\begin{tabular}{|l|l|l|l|}
-			
 			\hline
 			Components       	& Suggested 		& Measured      	&\% Diff	\\ \hline
 			Resistor  	    	& $1 k\Omega$		& $1.05 k\Omega$   & 5\%	     \\ \hline	
 			Capacitor			& $16 n F$			& $15.15 nF$		& -5.3\%		\\ \hline
 		\end{tabular}
 	\end{table}
+
 	Other sources of error include tuning the oscilloscope to show less noise in the waveform, and periodically adjusting the signal generator to control the desired input frequency. With this in mind, our graphs were visually the same on the oscilloscope and PSpice.
+	
+	The error at the cutoff frequency is, essentially, due to the limitations of the oscilloscope. The voltage measurement in the oscilloscope can't display 1.414v; the closest possible measurement is 1.422. The error at the low voltages is due to the oscilloscope measuring the voltage peaks caused by EMI, rather than what our circuit is actually producing.
 	\subsection*{Conclusion}
 	The circuit itself was constructed using a breadboard, using components within the lab. The output shown on the oscilloscope was what we expected and had alligned with the simulation in PSpice and our calculations, showing very little overall error. 
 	The high pass circuit shows an increase in the transfer function with the increase of omega. This means the ratio of $\frac{V_{o}}{V_{in}}$ approaches one, and that the output attempts to match the input at higher frequencies, effectively allowing the high frequencies to pass through the circuit. 
