@@ -118,7 +118,10 @@
 	\end{table}
 	Other sources of error include tuning the oscilloscope to show less noise in the waveform, and periodically adjusting the signal generator to control the desired input frequency. With this in mind, our graphs were visually the same on the oscilloscope and PSpice.
 	\subsection*{Conclusion}
-	The circuit itself was constructed using a breadboard, using components within the lab. The output shown on the oscilloscope was what we expected and had alligned with the simulation in PSpice and our calculations, showing ver little overall error. 
+	The circuit itself was constructed using a breadboard, using components within the lab. The output shown on the oscilloscope was what we expected and had alligned with the simulation in PSpice and our calculations, showing very little overall error. 
+	The high pass circuit shows an increase in the transfer function with the increase of omega. This means the ratio of $\frac{V_{o}}{V_{in}}$ approaches one, and that the output attempts to match the input at higher frequencies, effectively allowing the high frequencies to pass through the circuit. 
+	The low pass circuit shows an inverse relationship to the high pass, in which the transfer function of $\frac{V_{o}}{V_{in}}$ approaches zero with an increase of omega, and allows only lower frequencies to pass through the circuit. 
+	\newpage
 	\subsection*{Appendix A: Photos}
 	The RC low pass filter output vs input simulated in PSpice is shown below. 
 	\begin{figure}[H]
