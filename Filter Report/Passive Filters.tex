@@ -26,7 +26,7 @@
 			\centering
 			\includegraphics[width=3.5in]{images/low diagram.PNG}
 		\end{figure}
-		High Pass Filter:
+	High Pass Filter:
 		\begin{figure}[H]
 		    \centering
 		    \includegraphics[width=3.5in]{images/high diagram.PNG}
@@ -75,12 +75,13 @@
 	The circuits were simple to construct using the breadboard. Aside from constructing the circuit as normal, we used the LCR meter to select a capacitor to minimize to give us more accurate results between the ideal and observed circuits. After constructing the circuits, measurements were taken in the usual manner using the oscilloscope. We then swept the frequency through a large range with various waveforms to see the differentiating effect of the high pass filter. These outputs are shown below.
 	
 	
-	Square Wave
+	Square Wave - high frequency
 	\begin{figure}[H]
 		\centering
 		\includegraphics[width=3.5in]{images/sq_wave HF.JPG}
 		High Frequency
 	\end{figure}
+	Square Wave - low frequency
 	
 	\begin{figure}[H]
 		\centering
@@ -88,12 +89,13 @@
 		Low Frequency
 	\end{figure}
 	\newpage
-	Triangle Wave
+	Triangle Wave - high frequency
 	\begin{figure}[H]
 		\centering
 		\includegraphics[width=4in]{images/tri_wave HF.JPG}
 		High Frequency
 	\end{figure}
+	Triangle Wave - low frequency
 	
 	\begin{figure}[H]
 		\centering
@@ -114,6 +116,19 @@
 			Capacitor			& $16 n F$			& $15.15 nF$		& -5.3\%		\\ \hline
 		\end{tabular}
 	\end{table}
-	\subsection*{Summary}
+	Other sources of error include tuning the oscilloscope to show less noise in the waveform, and periodically adjusting the signal generator to control the desired input frequency. With this in mind, our graphs were visually the same on the oscilloscope and PSpice.
+	\subsection*{Conclusion}
+	The circuit itself was constructed using a breadboard, using components within the lab. The output shown on the oscilloscope was what we expected and had alligned with the simulation in PSpice and our calculations, showing ver little overall error. 
+	\subsection*{Appendix A: Photos}
+	The RC low pass filter output vs input simulated in PSpice is shown below. 
+	\begin{figure}[H]
+		    \centering
+		    \includegraphics[width=5in]{images/PSpice RC Low Pass.PNG}
+		\end{figure}
+	The RC high pass filter output vs input simulated in PSpice is shown below.
+	\begin{figure}[H]
+		    \centering
+		    \includegraphics[width=5in]{images/RC High Pass.PNG}
+		\end{figure}
 	
 	\end{document}
