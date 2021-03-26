@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 2.9.7300 64-bit) (preloaded format=pdflatex 2020.2.24)  26 MAR 2021 11:43
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 2.9.7300 64-bit) (preloaded format=pdflatex 2020.2.24)  26 MAR 2021 12:07
 entering extended mode
 **"./Passive Filters.tex"
 ("Passive Filters.tex"
@@ -735,20 +735,11 @@ Underfull \hbox (badness 10000) in paragraph at lines 58--68
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 58--68
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 58--68
-
- []
-
-[2]
 Underfull \hbox (badness 10000) in paragraph at lines 71--74
 
  []
 
+[2]
 <images/tri_wave LF(cropped).jpg, id=29, 3376.615pt x 2169.10374pt>
 File: images/tri_wave LF(cropped).jpg Graphic file (type jpg)
 <use images/tri_wave LF(cropped).jpg>
@@ -760,7 +751,7 @@ File: images/sq_wave LF.JPG Graphic file (type jpg)
 <use images/sq_wave LF.JPG>
 Package pdftex.def Info: images/sq_wave LF.JPG  used on input line 88.
 (pdftex.def)             Requested size: 397.48499pt x 298.08803pt.
-[3 <./images/tri_wave LF(cropped).jpg>]
+ [3 <./images/tri_wave LF(cropped).jpg>]
 <images/tri_wave HF.JPG, id=37, 4175.6pt x 3131.7pt>
 File: images/tri_wave HF.JPG Graphic file (type jpg)
 <use images/tri_wave HF.JPG>
@@ -810,7 +801,7 @@ Data/Local/Programs/MiKTeX 2.9/fonts/type1/adobe/utopia/putb8a.pfb><C:/Users/Al
 pha/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/adobe/utopia/putr8a.pfb><C:/U
 sers/Alpha/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/adobe/utopia/putri8a.p
 fb>
-Output written on "Passive Filters.pdf" (6 pages, 10142986 bytes).
+Output written on "Passive Filters.pdf" (6 pages, 10142991 bytes).
 PDF statistics:
  88 PDF objects out of 1000 (max. 8388607)
  19 named destinations out of 1000 (max. 500000)
