@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 20.6.29) (preloaded format=pdflatex 2020.10.5)  24 MAR 2021 21:56
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 20.6.29) (preloaded format=pdflatex 2020.10.5)  25 MAR 2021 20:43
 entering extended mode
 **"./Passive Filters.tex"
 ("Passive Filters.tex"
@@ -621,118 +621,143 @@ LaTeX Font Info:    Font shape `U/futm/m/n' will be
 (Font)              scaled to size 8.27998pt on input line 21.
 LaTeX Font Info:    Font shape `U/futm/m/n' will be
 (Font)              scaled to size 6.43999pt on input line 21.
-LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
-(Font)              scaled to size 10.07397pt on input line 29.
-LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
-(Font)              scaled to size 7.63599pt on input line 29.
-LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
-(Font)              scaled to size 5.51999pt on input line 29.
-LaTeX Font Info:    Font shape `U/futm/m/n' will be
-(Font)              scaled to size 10.07397pt on input line 29.
-LaTeX Font Info:    Font shape `U/futm/m/n' will be
-(Font)              scaled to size 7.63599pt on input line 29.
-LaTeX Font Info:    Font shape `U/futm/m/n' will be
-(Font)              scaled to size 5.51999pt on input line 29.
-
-Underfull \hbox (badness 10000) in paragraph at lines 29--39
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 29--39
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 29--39
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 29--39
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 29--39
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 29--39
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 42--45
-
- []
+<images/low diagram.PNG, id=3, 415.5525pt x 283.0575pt>
+File: images/low diagram.PNG Graphic file (type png)
+<use images/low diagram.PNG>
+Package pdftex.def Info: images/low diagram.PNG  used on input line 27.
+(pdftex.def)             Requested size: 252.94499pt x 172.29768pt.
+<images/high diagram.PNG, id=5, 408.3255pt x 257.763pt>
+File: images/high diagram.PNG Graphic file (type png)
+<use images/high diagram.PNG>
+Package pdftex.def Info: images/high diagram.PNG  used on input line 32.
+(pdftex.def)             Requested size: 252.94499pt x 159.67767pt.
 
 [1
 
-{C:/Users/akhen/AppData/Local/MiKTeX/pdftex/config/pdftex.map}]
-Underfull \hbox (badness 10000) in paragraph at lines 48--58
+{C:/Users/akhen/AppData/Local/MiKTeX/pdftex/config/pdftex.map} <./images/low di
+agram.PNG> <./images/high diagram.PNG>]
+LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
+(Font)              scaled to size 10.07397pt on input line 39.
+LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
+(Font)              scaled to size 7.63599pt on input line 39.
+LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
+(Font)              scaled to size 5.51999pt on input line 39.
+LaTeX Font Info:    Font shape `U/futm/m/n' will be
+(Font)              scaled to size 10.07397pt on input line 39.
+LaTeX Font Info:    Font shape `U/futm/m/n' will be
+(Font)              scaled to size 7.63599pt on input line 39.
+LaTeX Font Info:    Font shape `U/futm/m/n' will be
+(Font)              scaled to size 5.51999pt on input line 39.
+
+Underfull \hbox (badness 10000) in paragraph at lines 39--49
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 48--58
+Underfull \hbox (badness 10000) in paragraph at lines 39--49
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 48--58
+Underfull \hbox (badness 10000) in paragraph at lines 39--49
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 48--58
+Underfull \hbox (badness 10000) in paragraph at lines 39--49
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 48--58
+Underfull \hbox (badness 10000) in paragraph at lines 52--55
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 48--58
+Underfull \hbox (badness 10000) in paragraph at lines 58--68
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 61--64
+Underfull \hbox (badness 10000) in paragraph at lines 58--68
 
  []
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 65.
+
+Underfull \hbox (badness 10000) in paragraph at lines 58--68
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 58--68
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 58--68
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 58--68
+
+ []
+
 [2]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 65.
+Underfull \hbox (badness 10000) in paragraph at lines 71--74
+
+ []
+
+<images/sq_wave HF.JPG, id=29, 4175.6pt x 3131.7pt>
+File: images/sq_wave HF.JPG Graphic file (type jpg)
+<use images/sq_wave HF.JPG>
+Package pdftex.def Info: images/sq_wave HF.JPG  used on input line 81.
+(pdftex.def)             Requested size: 252.94499pt x 189.66197pt.
+<images/sq_wave LF.JPG, id=30, 4175.6pt x 3131.7pt>
+File: images/sq_wave LF.JPG Graphic file (type jpg)
+<use images/sq_wave LF.JPG>
+Package pdftex.def Info: images/sq_wave LF.JPG  used on input line 87.
+(pdftex.def)             Requested size: 252.94499pt x 189.66197pt.
+[3 <./images/sq_wave HF.JPG> <./images/sq_wave LF.JPG>]
+<images/tri_wave HF.JPG, id=37, 4175.6pt x 3131.7pt>
+File: images/tri_wave HF.JPG Graphic file (type jpg)
+<use images/tri_wave HF.JPG>
+Package pdftex.def Info: images/tri_wave HF.JPG  used on input line 94.
+(pdftex.def)             Requested size: 289.07999pt x 216.80432pt.
+<images/tri_wave LF.JPG, id=38, 4175.6pt x 3131.7pt>
+File: images/tri_wave LF.JPG Graphic file (type jpg)
+<use images/tri_wave LF.JPG>
+Package pdftex.def Info: images/tri_wave LF.JPG  used on input line 100.
+(pdftex.def)             Requested size: 289.07999pt x 216.80432pt.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 119.
+ [4 <./images/tri_wave HF.JPG> <./images/tri_wave LF.JPG>]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 119.
  ("Passive Filters.aux")
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 65.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 65.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 119.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 119.
 Package rerunfilecheck Info: File `"Passive Filters".out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 7962 strings out of 480790
- 117624 string characters out of 2897301
- 385134 words of memory out of 3000000
- 23775 multiletter control sequences out of 15000+200000
+ 8008 strings out of 480790
+ 118571 string characters out of 2897301
+ 386134 words of memory out of 3000000
+ 23807 multiletter control sequences out of 15000+200000
  597877 words of font info for 105 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 43i,6n,33p,834b,312s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 43i,9n,33p,834b,312s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Users/akhen/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/base/8r.enc}<C:
 /Users/akhen/AppData/Local/Programs/MiKTeX/fonts/type1/public/fourier/fourier-m
-lit.pfb><C:/Users/akhen/AppData/Local/Programs/MiKTeX/fonts/type1/public/fourie
-r/fourier-ms.pfb><C:/Users/akhen/AppData/Local/Programs/MiKTeX/fonts/type1/publ
-ic/amsfonts/symbols/msam10.pfb><C:/Users/akhen/AppData/Local/Programs/MiKTeX/fo
-nts/type1/adobe/utopia/putb8a.pfb><C:/Users/akhen/AppData/Local/Programs/MiKTeX
-/fonts/type1/adobe/utopia/putr8a.pfb><C:/Users/akhen/AppData/Local/Programs/MiK
-TeX/fonts/type1/adobe/utopia/putri8a.pfb>
-Output written on "Passive Filters.pdf" (2 pages, 66080 bytes).
+l.pfb><C:/Users/akhen/AppData/Local/Programs/MiKTeX/fonts/type1/public/fourier/
+fourier-mlit.pfb><C:/Users/akhen/AppData/Local/Programs/MiKTeX/fonts/type1/publ
+ic/fourier/fourier-ms.pfb><C:/Users/akhen/AppData/Local/Programs/MiKTeX/fonts/t
+ype1/public/amsfonts/symbols/msam10.pfb><C:/Users/akhen/AppData/Local/Programs/
+MiKTeX/fonts/type1/adobe/utopia/putb8a.pfb><C:/Users/akhen/AppData/Local/Progra
+ms/MiKTeX/fonts/type1/adobe/utopia/putr8a.pfb><C:/Users/akhen/AppData/Local/Pro
+grams/MiKTeX/fonts/type1/adobe/utopia/putri8a.pfb>
+Output written on "Passive Filters.pdf" (4 pages, 18440430 bytes).
 PDF statistics:
- 49 PDF objects out of 1000 (max. 8388607)
- 10 named destinations out of 1000 (max. 500000)
- 1 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 74 PDF objects out of 1000 (max. 8388607)
+ 15 named destinations out of 1000 (max. 500000)
+ 31 words of extra memory for PDF output out of 10000 (max. 10000000)
 
