@@ -1,0 +1,191 @@
+EESchema-LIBRARY Version 2.3
+#encoding utf-8
+#SamacSys ECAD Model NE555DR
+#/6648/2/2.37/8/4/Integrated Circuit
+DEF NE555DR IC 0 30 Y Y 1 F N
+F0 "IC" 1050 600 50 H V L CNN
+F1 "NE555DR" 1050 500 50 H V L CNN
+F2 "SOIC127P600X175-8N" 1050 400 50 H I L CNN
+F3 "http://www.ti.com/lit/ds/symlink/ne555.pdf" 1050 300 50 H I L CNN
+F4 "Single Precision Timer" 1050 200 50 H I L CNN "Description"
+F5 "1.75" 1050 100 50 H I L CNN "Height"
+F6 "Texas Instruments" 1050 0 50 H I L CNN "Manufacturer_Name"
+F7 "NE555DR" 1050 -100 50 H I L CNN "Manufacturer_Part_Number"
+F8 "595-NE555DR" 1050 -200 50 H I L CNN "Mouser Part Number"
+F9 "https://www.mouser.com/Search/Refine.aspx?Keyword=595-NE555DR" 1050 -300 50 H I L CNN "Mouser Price/Stock"
+F10 "1218414" 1050 -400 50 H I L CNN "RS Part Number"
+F11 "http//uk.rs-online.com/web/p/products/1218414" 1050 -500 50 H I L CNN "RS Price/Stock"
+DRAW
+X GND 1 600 -1000 200 U 50 50 0 0 B
+X TRIG 2 0 -400 200 R 50 50 0 0 B
+X OUT 3 1200 -200 200 L 50 50 0 0 B
+X ~RESET 4 0 0 200 R 50 50 0 0 B
+X CONT 5 500 600 200 D 50 50 0 0 B
+X THRES 6 0 -300 200 R 50 50 0 0 B
+X DISCH 7 0 -100 200 R 50 50 0 0 B
+X VCC 8 700 600 200 D 50 50 0 0 B
+P 5 0 1 6 200 400 1000 400 1000 -800 200 -800 200 400 N
+ENDDRAW
+ENDDEF
+#
+#SamacSys ECAD Model AP64350SP-13
+#/11358543/457903/2.49/9/3/Integrated Circuit
+DEF AP64350SP-13 IC 0 30 Y Y 1 F N
+F0 "IC" 1050 300 50 H V L CNN
+F1 "AP64350SP-13" 1050 200 50 H V L CNN
+F2 "SOIC127P600X163-9N" 1050 100 50 H I L CNN
+F3 "https://www.diodes.com/assets/Datasheets/AP64350.pdf" 1050 0 50 H I L CNN
+F4 "Switching Voltage Regulators 3.8V-40V 3.5A LOW IQ SYN BUCK PRG SW FRQ" 1050 -100 50 H I L CNN "Description"
+F5 "1.63" 1050 -200 50 H I L CNN "Height"
+F6 "621-AP64350SP-13" 1050 -300 50 H I L CNN "Mouser Part Number"
+F7 "https://www.mouser.co.uk/ProductDetail/Diodes-Incorporated/AP64350SP-13/?qs=P1JMDcb91o71f8WTy9mMPQ%3D%3D" 1050 -400 50 H I L CNN "Mouser Price/Stock"
+F8 "Diodes Inc." 1050 -500 50 H I L CNN "Manufacturer_Name"
+F9 "AP64350SP-13" 1050 -600 50 H I L CNN "Manufacturer_Part_Number"
+DRAW
+X BST 1 0 0 200 R 50 50 0 0 P
+X VIN 2 0 -100 200 R 50 50 0 0 P
+X EN 3 0 -200 200 R 50 50 0 0 P
+X RT/CLK 4 0 -300 200 R 50 50 0 0 P
+X EP 9 600 -800 200 U 50 50 0 0 P
+X SW 8 1200 0 200 L 50 50 0 0 P
+X GND 7 1200 -100 200 L 50 50 0 0 P
+X COMP 6 1200 -200 200 L 50 50 0 0 P
+X FB 5 1200 -300 200 L 50 50 0 0 P
+P 5 0 1 6 200 100 1000 100 1000 -600 200 -600 200 100 N
+ENDDRAW
+ENDDEF
+#
+#SamacSys ECAD Model 0031.8370
+#/405980/457903/2.49/2/4/Undefined or Miscellaneous
+DEF 0031.8370 U 0 30 Y Y 1 F N
+F0 "U" 650 300 50 H V L CNN
+F1 "0031.8370" 650 200 50 H V L CNN
+F2 "00318370" 650 100 50 H I L CNN
+F3 "http://www.schurterinc.com/bundles/snceschurter/epim/_ProdPool_/newDS/en/typ_OGN-SMD.pdf" 650 0 50 H I L CNN
+F4 "OGN-SMD;HOLDER;FUSE;FST" 650 -100 50 H I L CNN "Description"
+F5 "13.2" 650 -200 50 H I L CNN "Height"
+F6 "693-0031.837" 650 -300 50 H I L CNN "Mouser Part Number"
+F7 "https://www.mouser.co.uk/ProductDetail/Schurter/00318370/?qs=j1qng3XoT%2Fm7LqdKXKaStA%3D%3D" 650 -400 50 H I L CNN "Mouser Price/Stock"
+F8 "SCHURTER" 650 -500 50 H I L CNN "Manufacturer_Name"
+F9 "0031.8370" 650 -600 50 H I L CNN "Manufacturer_Part_Number"
+DRAW
+X 1 1 0 0 200 R 50 50 0 0 P
+X 2 2 0 -100 200 R 50 50 0 0 P
+P 5 0 1 6 200 100 600 100 600 -200 200 -200 200 100 N
+ENDDRAW
+ENDDEF
+#
+#SamacSys ECAD Model RS105
+#/2060057/457903/2.49/4/3/Bridge Rectifier
+DEF RS105 BR 0 30 Y Y 1 F N
+F0 "BR" 750 300 50 H V L CNN
+F1 "RS105" 750 200 50 H V L CNN
+F2 "TO385P410X1600X1290-4P" 750 100 50 H I L CNN
+F3 "https://componentsearchengine.com/Datasheets/1/RS105.pdf" 750 0 50 H I L CNN
+F4 "Bridge Rectifiers 1A 600V" 750 -100 50 H I L CNN "Description"
+F5 "4.1" 750 -200 50 H I L CNN "Height"
+F6 "583-RS105" 750 -300 50 H I L CNN "Mouser Part Number"
+F7 "https://www.mouser.com/Search/Refine.aspx?Keyword=583-RS105" 750 -400 50 H I L CNN "Mouser Price/Stock"
+F8 "Rectron" 750 -500 50 H I L CNN "Manufacturer_Name"
+F9 "RS105" 750 -600 50 H I L CNN "Manufacturer_Part_Number"
+DRAW
+X + 1 0 0 200 R 50 50 0 0 P
+X ~_1 2 0 -100 200 R 50 50 0 0 P
+X ~_2 3 0 -200 200 R 50 50 0 0 P
+X - 4 0 -300 200 R 50 50 0 0 P
+P 5 0 1 6 200 100 700 100 700 -400 200 -400 200 100 N
+ENDDRAW
+ENDDEF
+#
+#SamacSys ECAD Model 0603YC104MAT4A
+#/733355/457903/2.49/2/5/Capacitor
+DEF 0603YC104MAT4A C 0 30 Y Y 1 F N
+F0 "C" 350 250 50 H V L CNN
+F1 "0603YC104MAT4A" 350 150 50 H V L CNN
+F2 "CAPC1608X90N" 350 50 50 H I L CNN
+F3 "https://componentsearchengine.com/Datasheets/1/06031A100FAT2A.pdf" 350 -50 50 H I L CNN
+F4 "Multilayer Ceramic Capacitors MLCC - SMD/SMT 16V .1uF X7R 0603 20% Tol" 350 -150 50 H I L CNN "Description"
+F5 "0.9" 350 -250 50 H I L CNN "Height"
+F6 "581-0603YC104MAT4A" 350 -350 50 H I L CNN "Mouser Part Number"
+F7 "https://www.mouser.co.uk/ProductDetail/AVX/0603YC104MAT4A?qs=qpcTLztZrGoLiErdVe8BSA%3D%3D" 350 -450 50 H I L CNN "Mouser Price/Stock"
+F8 "AVX" 350 -550 50 H I L CNN "Manufacturer_Name"
+F9 "0603YC104MAT4A" 350 -650 50 H I L CNN "Manufacturer_Part_Number"
+DRAW
+X ~ 1 0 0 200 R 50 50 0 0 P
+X ~ 2 500 0 200 L 50 50 0 0 P
+P 2 0 1 6 220 100 220 -100 N
+P 2 0 1 6 280 100 280 -100 N
+P 2 0 1 6 200 0 220 0 N
+P 2 0 1 6 280 0 300 0 N
+ENDDRAW
+ENDDEF
+#
+#SamacSys ECAD Model 04023C332KAT2A
+#/544454/457903/2.49/2/5/Capacitor
+DEF 04023C332KAT2A C 0 30 Y Y 1 F N
+F0 "C" 350 250 50 H V L CNN
+F1 "04023C332KAT2A" 350 150 50 H V L CNN
+F2 "CAPC1005X56N" 350 50 50 H I L CNN
+F3 "" 350 -50 50 H I L CNN
+F4 "Multilayer Ceramic Capacitors MLCC - SMD/SMT 25V 3300pF X7R 0402 10% Tol" 350 -150 50 H I L CNN "Description"
+F5 "0.56" 350 -250 50 H I L CNN "Height"
+F6 "581-04023C332K" 350 -350 50 H I L CNN "Mouser Part Number"
+F7 "https://www.mouser.co.uk/ProductDetail/AVX/04023C332KAT2A/?qs=Lgw3IP4hlAq7t2%252BQenLnDQ%3D%3D" 350 -450 50 H I L CNN "Mouser Price/Stock"
+F8 "AVX" 350 -550 50 H I L CNN "Manufacturer_Name"
+F9 "04023C332KAT2A" 350 -650 50 H I L CNN "Manufacturer_Part_Number"
+DRAW
+X ~ 1 0 0 200 R 50 50 0 0 P
+X ~ 2 500 0 200 L 50 50 0 0 P
+P 2 0 1 6 220 100 220 -100 N
+P 2 0 1 6 280 100 280 -100 N
+P 2 0 1 6 200 0 220 0 N
+P 2 0 1 6 280 0 300 0 N
+ENDDRAW
+ENDDEF
+#
+#SamacSys ECAD Model RGA101M1EBK-0611G
+#/1113514/457903/2.49/2/4/Capacitor Polarised
+DEF RGA101M1EBK-0611G C 0 30 Y Y 1 F N
+F0 "C" 350 250 50 H V L CNN
+F1 "RGA101M1EBK-0611G" 350 150 50 H V L CNN
+F2 "CAPPRD225W50D680H1250" 350 50 50 H I L CNN
+F3 "https://componentsearchengine.com/Datasheets/1/RGA101M1EBK-0611G.pdf" 350 -50 50 H I L CNN
+F4 "Aluminum Electrolytic Capacitors - Leaded 25V 100uF 105C 6.3x11mm" 350 -150 50 H I L CNN "Description"
+F5 "12.5" 350 -250 50 H I L CNN "Height"
+F6 "140-RGA101M1EBK0611G" 350 -350 50 H I L CNN "Mouser Part Number"
+F7 "https://www.mouser.co.uk/ProductDetail/Lelon/RGA101M1EBK-0611G?qs=pNDdEcSXiOD7yLUz3NUJrA%3D%3D" 350 -450 50 H I L CNN "Mouser Price/Stock"
+F8 "Lelon" 350 -550 50 H I L CNN "Manufacturer_Name"
+F9 "RGA101M1EBK-0611G" 350 -650 50 H I L CNN "Manufacturer_Part_Number"
+DRAW
+X ~ 1 0 0 100 R 50 50 0 0 P
+X ~ 2 500 0 100 L 50 50 0 0 P
+P 5 0 1 6 200 100 200 -100 230 -100 230 100 200 100 N
+P 2 0 1 6 180 50 140 50 N
+P 2 0 1 6 160 70 160 30 N
+P 2 0 1 6 100 0 200 0 N
+P 2 0 1 6 300 0 400 0 N
+P 5 0 1 10 300 100 300 -100 270 -100 270 100 300 100 F
+ENDDRAW
+ENDDEF
+#
+#SamacSys ECAD Model CR1206-FX-3093ELF
+#/2033328/457903/2.49/2/5/Resistor
+DEF CR1206-FX-3093ELF R 0 30 Y Y 1 F N
+F0 "R" 550 250 50 H V L CNN
+F1 "CR1206-FX-3093ELF" 550 150 50 H V L CNN
+F2 "RESC3216X75N" 550 50 50 H I L CNN
+F3 "https://componentsearchengine.com/Datasheets/1/CR1206-FX-3093ELF.pdf" 550 -50 50 H I L CNN
+F4 "Thick Film Resistors - SMD 309K 1%" 550 -150 50 H I L CNN "Description"
+F5 "0.75" 550 -250 50 H I L CNN "Height"
+F6 "652-CR1206FX-3093ELF" 550 -350 50 H I L CNN "Mouser Part Number"
+F7 "https://www.mouser.com/Search/Refine.aspx?Keyword=652-CR1206FX-3093ELF" 550 -450 50 H I L CNN "Mouser Price/Stock"
+F8 "Bourns" 550 -550 50 H I L CNN "Manufacturer_Name"
+F9 "CR1206-FX-3093ELF" 550 -650 50 H I L CNN "Manufacturer_Part_Number"
+DRAW
+X ~ 1 0 0 200 R 50 50 0 0 P
+X ~ 2 700 0 200 L 50 50 0 0 P
+P 5 0 1 6 200 50 500 50 500 -50 200 -50 200 50 N
+ENDDRAW
+ENDDEF
+#
+#End Library

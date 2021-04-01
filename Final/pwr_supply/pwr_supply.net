@@ -1,7 +1,7 @@
 (export (version D)
   (design
-    (source "C:\\Users\\akhen\\Documents\\circuits\\Kicad\\Final Project\\pwr_supply\\pwr_supply.sch")
-    (date "3/31/2021 3:29:29 PM")
+    (source C:\Users\akhen\Documents\circuits\Repository\Final\pwr_supply\pwr_supply.sch)
+    (date "3/31/2021 5:23:42 PM")
     (tool "Eeschema (5.1.9)-1")
     (sheet (number 1) (name /) (tstamps /)
       (title_block
@@ -193,7 +193,7 @@
     (comp (ref R5)
       (value 115k)
       (footprint Resistor_SMD:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder)
-      (datasheet 667-ERJ-8ENF1153V)
+      (datasheet " 652-CR1206FX-3093ELF ")
       (libsource (lib Device) (part R_Small) (description "Resistor, small symbol"))
       (sheetpath (names /) (tstamps /))
       (tstamp 60642B80))

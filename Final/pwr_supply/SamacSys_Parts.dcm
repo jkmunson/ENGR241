@@ -1,0 +1,51 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP NE555DR
+D Single Precision Timer
+K
+F http://www.ti.com/lit/ds/symlink/ne555.pdf
+$ENDCMP
+#
+$CMP AP64350SP-13
+D Switching Voltage Regulators 3.8V-40V 3.5A LOW IQ SYN BUCK PRG SW FRQ
+K
+F https://www.diodes.com/assets/Datasheets/AP64350.pdf
+$ENDCMP
+#
+$CMP 0031.8370
+D OGN-SMD;HOLDER;FUSE;FST
+K
+F http://www.schurterinc.com/bundles/snceschurter/epim/_ProdPool_/newDS/en/typ_OGN-SMD.pdf
+$ENDCMP
+#
+$CMP RS105
+D Bridge Rectifiers 1A 600V
+K
+F https://componentsearchengine.com/Datasheets/1/RS105.pdf
+$ENDCMP
+#
+$CMP 0603YC104MAT4A
+D Multilayer Ceramic Capacitors MLCC - SMD/SMT 16V .1uF X7R 0603 20% Tol
+K
+F https://componentsearchengine.com/Datasheets/1/06031A100FAT2A.pdf
+$ENDCMP
+#
+$CMP 04023C332KAT2A
+D Multilayer Ceramic Capacitors MLCC - SMD/SMT 25V 3300pF X7R 0402 10% Tol
+K
+F 
+$ENDCMP
+#
+$CMP RGA101M1EBK-0611G
+D Aluminum Electrolytic Capacitors - Leaded 25V 100uF 105C 6.3x11mm
+K
+F https://componentsearchengine.com/Datasheets/1/RGA101M1EBK-0611G.pdf
+$ENDCMP
+#
+$CMP CR1206-FX-3093ELF
+D Thick Film Resistors - SMD 309K 1%
+K
+F https://componentsearchengine.com/Datasheets/1/CR1206-FX-3093ELF.pdf
+$ENDCMP
+#
+#End Doc Library
