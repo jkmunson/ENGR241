@@ -22,5 +22,22 @@
 	For this lab we designed and  constructed an active Butterworth Low Pass Filter with a cutoff frequency of 1KHz and a passband gain of 6 dB. The circuit was designed to have a minimum of 70dB of attenuation at 10KHz. We disgned and tested the circuit using Orcad prior to building the circuit. We then built and observed the output on the oscilloscope to ensure we met the design requirements.
 	\subsection*{Circuit Diagrams}
 	\subsection*{Calculations}
-	The calculations for this lab required us to determine the number of stages needed to meet the attenuation specifications of 70dB at 10KHz. We then calculated the values for the capacitors  
+	The calculations for this lab required us to determine the number of stages needed to meet the attenuation specifications of 70dB at 10KHz. We then calculated the values for the capacitors using scaling and choosing a resistor value of 1k $\Omega$.
+	\subsubsection*{1. Approximate the number of stages needed to attain 70dB of attenuation.}
+	Given:\\
+	$f_{s}=10KHz$\\
+	$f_{p}=1KHz$\\\\
+	$n=\frac{-0.05A_{s}}{log(f_{s}/f_{p})}$\\
+	$n=\frac{-0.05\cdot -70}{log(10KHz/1KHz)}=3.5$\\
+	=>four stages should provide the required attenuation\\
+	\subsubsection*{2. Using the roots from the Butterworth $n^{th}$ order polynomial table, calculate the roots of the polynomials for a fourth order filter.}
+	Given:
+	$(s^{2}+0.765s+1)(s^{2}+1.848s+1)$\\
+	$C_{1}=2.61F$\\
+	$C_{2}=0.38F$\\
+	$C_{3}=1.08F$\\
+	$C_{4}=0.924F$\\
+	\subsubsection*{3. Using the values found above, scale the capacitors for the selected resistor value.}
+	
+		  
 \end{document}
