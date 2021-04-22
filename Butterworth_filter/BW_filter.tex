@@ -19,7 +19,7 @@
 \begin{document}
 	\maketitle
 	\subsection*{Overview}
-	For this lab we designed and  constructed an active Butterworth Low Pass Filter with a cutoff frequency of 1KHz and a passband gain of 6 dB. The circuit was designed to have a minimum of 70dB of attenuation at 10KHz. We disgned and tested the circuit using Orcad prior to building the circuit. We then built and observed the output on the oscilloscope to ensure we met the design requirements.
+	For this lab we designed and  constructed an active Butterworth Low Pass Filter with a cutoff frequency of 1KHz and a passband gain of 6 dB. The circuit was designed to have a minimum of 70dB of attenuation at 10KHz. We designed and tested the circuit using Orcad prior to building the circuit. We then built and observed the output on the oscilloscope to ensure we met the design requirements.
 	\subsection*{Circuit Diagrams}
 		\begin{figure}[H]
 		\centering
@@ -76,9 +76,20 @@
 	\end{tabular}
 	\end{table}
 	\subsection*{Procedure}
-	The circuit was more involved than others we built in the class. We were able to successfully design the circuit in the first week of the lab, which involved running simulations with our calculated values to ensure we would meet the design criteria. We then built the circuit using 
-			\begin{figure}[H]
+	The circuit was more involved than others we built in the class. We were able to successfully design the circuit based off of example 15.22 in the text in the first week of the lab. We also ran simulations of the lab in Orcad and met the calculations accordingly to ensure we would meet the design criteria. We then began building the circuit on a breadboard with the proper components in the second week, along with troubleshooting the circuit where necessary. Below is a picture of the circuit on the breadboard.
+			
+\begin{figure}[H]
+	    \centering
+	    \includegraphics[width=5.5in]{images/Circuit.jpg}
+	 \end{figure}
+	 \newpage
+	\subsection*{Error Analysis}
+	Our error analysis for this lab was good. Shown by the graph below our circuit preformed very closely with the simulated circuit and our average error in our data table from above was 35.7/%. 
+	Our main sources of error were in the non-ideal components that were found in the lab. Also with the abundance of wires there was quite a bit of noise showing on the oscilloscope that we adjusted by adding another capacitor, shown on the left rail in the picture above. 			
+	\begin{figure}[H]
 		\centering
 		\includegraphics[width=5.5in]{images/comparison_graph.PNG}
 	\end{figure}
+\subsection*{Conclusion}
+	As stated above, this circuit design was more involved than previous labs. We designed, simulated, built and tested the chosen circuit within the two week requirement. We successfully calculated the nth order needed for the design and adjusted the passband by adding the 2Kohm resistor on the inverting amplifier. We achieved the minimum of -70db rolloff. We constructed, labeled, and simulated the diagram in Orcad, however we used HA17741 op amps rather than the suggested LM324. The Bode Plots with the ideal magnitude and phase are shown below. We tested our design on the oscilloscope successfully and took appropriate data.
 \end{document}
