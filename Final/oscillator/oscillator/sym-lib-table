@@ -1,0 +1,5 @@
+(sym_lib_table
+  (lib (name buf634a)(type Legacy)(uri C:/Users/Alpha/Desktop/buf634a.lib)(options "")(descr ""))
+  (lib (name ss-10-16npe)(type Legacy)(uri G:/workspace/school/ENGR-241/RepositorySVN/Final/oscillator/ss-10-16npe.lib)(options "")(descr ""))
+  (lib (name SamacSys_Parts)(type Legacy)(uri "G:/workspace/school/ENGR-241/RepositorySVN/Signal Generator/kicad_libs/SamacSys_Parts.lib")(options "")(descr ""))
+)

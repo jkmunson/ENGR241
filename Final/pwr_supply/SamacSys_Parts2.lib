@@ -1,0 +1,31 @@
+EESchema-LIBRARY Version 2.4
+#encoding utf-8
+#
+# AP64350SP-13_alt
+#
+DEF AP64350SP-13_alt IC 0 30 Y Y 1 F N
+F0 "IC" 200 250 50 H V L CNN
+F1 "AP64350SP-13_alt" 200 150 50 H V L CNN
+F2 "SOIC127P600X163-9N" 1710 -350 50 H I L CNN
+F3 "https://www.diodes.com/assets/Datasheets/AP64350.pdf" 1710 -450 50 H I L CNN
+F4 "Switching Voltage Regulators 3.8V-40V 3.5A LOW IQ SYN BUCK PRG SW FRQ" 1710 -550 50 H I L CNN "Description"
+F5 "1.63" 1850 -150 50 H I L CNN "Height"
+F6 "621-AP64350SP-13" 1710 -750 50 H I L CNN "Mouser Part Number"
+F7 "https://www.mouser.co.uk/ProductDetail/Diodes-Incorporated/AP64350SP-13/?qs=P1JMDcb91o71f8WTy9mMPQ%3D%3D" 1710 -850 50 H I L CNN "Mouser Price/Stock"
+F8 "Diodes Inc." 1750 -250 50 H I L CNN "Manufacturer_Name"
+F9 "AP64350SP-13" 1710 -1050 50 H I L CNN "Manufacturer_Part_Number"
+DRAW
+S 950 100 200 -850 0 1 0 N
+X BST 1 1150 0 200 L 50 50 0 0 P
+X VIN 2 0 0 200 R 50 50 0 0 P
+X EN 3 0 -250 200 R 50 50 0 0 P
+X RT/CLK 4 0 -500 200 R 50 50 0 0 P
+X FB 5 1150 -500 200 L 50 50 0 0 P
+X COMP 6 1150 -750 200 L 50 50 0 0 P
+X GND 7 0 -750 200 R 50 50 0 0 P
+X SW 8 1150 -250 200 L 50 50 0 0 P
+X PAD 9 550 -950 100 U 50 50 1 1 I
+ENDDRAW
+ENDDEF
+#
+#End Library

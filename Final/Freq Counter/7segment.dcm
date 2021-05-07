@@ -1,0 +1,9 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP TDCX10X0M
+D 4 digit 8 segment green LED, common cathode
+K display LED 7-segment
+F https://www.vishay.com/docs/83180/tdcx10x0m.pdf
+$ENDCMP
+#
+#End Doc Library

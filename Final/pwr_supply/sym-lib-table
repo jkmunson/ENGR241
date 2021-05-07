@@ -1,3 +1,5 @@
 (sym_lib_table
   (lib (name SamacSys_Parts)(type Legacy)(uri C:/Users/akhen/Documents/circuits/SamacSys_Parts.lib)(options "")(descr ""))
+  (lib (name pwr_supply-rescue)(type Legacy)(uri ${KIPRJMOD}/pwr_supply-rescue.lib)(options "")(descr ""))
+  (lib (name SamacSys_Parts2)(type Legacy)(uri ${KIPRJMOD}/SamacSys_Parts2.lib)(options "")(descr ""))
 )
