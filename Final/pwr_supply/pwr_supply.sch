@@ -646,12 +646,6 @@ Wire Wire Line
 Wire Wire Line
 	4300 5950 4150 5950
 Wire Notes Line
-	2400 4900 2400 6700
-Wire Notes Line
-	2400 6700 5100 6700
-Wire Notes Line
-	5100 6700 5100 4900
-Wire Notes Line
 	5100 4900 2400 4900
 Text Notes 4400 4900 0    50   ~ 0
 Create -15V Rail
@@ -794,4 +788,10 @@ Wire Wire Line
 Connection ~ 4350 3500
 Wire Wire Line
 	4350 3500 4750 3500
+Wire Notes Line
+	2400 4900 2400 6350
+Wire Notes Line
+	2400 6350 5100 6350
+Wire Notes Line
+	5100 6350 5100 4900
 $EndSCHEMATC
