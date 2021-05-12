@@ -1,0 +1,37 @@
+\documentclass[11pt]{article}
+\usepackage[letterpaper]{geometry}
+\usepackage{times}
+\usepackage{verbatim}
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage{fullwidth}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{hyperref}
+\graphicspath{{Images/}}
+\title{ENGR-241 Analog Computer Lab}
+\author{Jeremy Munson, Lauren Speirs \& Andrew Henrikson}
+\geometry{top=.8in, bottom=.8in, left=.8in, right=.8in}
+
+\setlength{\parindent}{0em}
+\setlength{\parskip}{.5em}
+\begin{document}
+	\maketitle
+	\subsection*{Overview}
+	Our main design for this project was to create our own signal generator. The generator would operate closely to the ones we have used in lab, except it wouldn't input a sin wave, and the frequency range was not as great, particularly on the low end. 
+	In the first week, we had discussed the design and parts needed. We had also finished the schematics, and Jeremy had the PCB layouts ready to be sent out for construction. 
+	The second week we had done testing of the generator; took some data and tested its performance. 
+	\section*{Performance}
+	The generator performed as expected. 
+	In our demonstration, we had also used a speaker to listen to the audio of the output signal for the square and triangle waves. 
+	\subsection*{Power Supply}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+\end{document}
